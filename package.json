@@ -1,0 +1,19 @@
+{
+  "name": "simple-mono-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui": "npm run start -w @packages/ui",
+    "api": "npm run dev -w @projects/api",
+    "app": "npm run dev -w @projects/app"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "projects/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
